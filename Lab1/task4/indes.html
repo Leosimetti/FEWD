@@ -1,0 +1,132 @@
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            gap: 30px;
+            grid-template-rows: repeat(4, 300px);
+            grid-template-columns: repeat(3, 350px);
+
+            grid-template-areas:
+            "one two two"
+            "one three four"
+            "five five four"
+            "five five six";
+        }
+
+        .one {
+            grid-area: one;
+            background-image: url("assets/block1.png");
+        }
+
+        .two {
+            grid-area: two;
+            background-image: url("assets/block2.png");
+        }
+
+        .three {
+            grid-area: three;
+            background-image: url("assets/block3.png");
+        }
+
+        .four {
+            grid-area: four;
+            background-image: url("assets/block4.png");
+        }
+
+        .five {
+            grid-area: five;
+            background-image: url("assets/block5.png");
+        }
+
+        .six {
+            grid-area: six;
+            background-image: url("assets/block6.png");
+        }
+
+        h1{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 64px;
+            /* identical to box height, or 133% */
+
+            font-feature-settings: 'salt' on, 'liga' off;
+
+            /* Text / Gray 900 */
+
+            color: #18191F;
+        }
+
+        h2{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 40px;
+            /* identical to box height, or 143% */
+
+            font-feature-settings: 'salt' on, 'liga' off;
+
+            /* Text / Gray 900 */
+
+            color: #18191F;
+
+            margin-bottom: 8px;
+        }
+
+        p{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            /* identical to box height, or 156% */
+
+            font-feature-settings: 'salt' on, 'liga' off;
+
+            /* Text / Gray 900 */
+
+            color: #18191F;
+
+            margin-top: 8px;
+        }
+
+        h2, p{
+            margin-left: 24px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Recent works</h1>
+<div class="container">
+    <div class="one">
+        <h2>Project Title</h2>
+        <p>Android, IoT</p>
+    </div>
+    <div class="two">
+        <h2>Project Title</h2>
+        <p>Android, IoT</p>
+    </div>
+    <div class="three">
+        <h2>Project Title</h2>
+        <p>Android, IoT</p>
+    </div>
+    <div class="four">
+        <h2>Project Title</h2>
+        <p>Android, IoT</p>
+    </div>
+    <div class="five">
+        <h2>Project Title</h2>
+        <p>Android, IoT</p>
+    </div>
+    <div class="six">
+        <h2>Project Title</h2>
+        <p>Android, IoT</p>
+    </div>
+</div>
+
+</body>
+</html>

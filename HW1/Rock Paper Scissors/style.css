@@ -1,0 +1,104 @@
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #282630;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+#title {
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    border-bottom: solid 10px white;
+    background-color: black;
+}
+
+#play-field {
+    height: 350px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 50px;
+    border: 20px solid orange;
+    background-color: white;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+}
+
+#vs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 69px;
+}
+
+#scores {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+
+    font-size: 90px;
+    color: blue;
+
+    border-bottom: 4px solid blue;
+}
+
+#scores > div {
+    display: flex;
+    margin: 10px;
+}
+
+.choice {
+    text-align: center;
+    width: 82px;
+
+    border: solid blue;
+    border-radius: 300px;
+    background-color: aqua;
+
+    transform: scale(3, 3);
+    padding: 2px;
+    margin: 34px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.choice:hover {
+    transform: scale(3.2, 3.2);
+}
+
+
+#user-vs, #bot-vs {
+    padding: 0;
+}
+
+
+#user-vs > .action {
+    transform: translateX(-33px) scaleX(-1);
+}
+
+#bot-vs > .action {
+    transform: translateX(33px);
+}
+
+#user-vs, #bot-vs {
+    display: flex;
+}
+

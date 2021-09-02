@@ -1,0 +1,83 @@
+<style>
+    /*
+        You are given HTML-code and example image. Try to reproduce image using only CSS.
+        You cannot modify HTML.
+
+        CSS properties that can be useful: display, position, height, width, background, left, top, border-radius,
+            content, box-shadow
+     */
+
+
+    img {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        opacity: 0.5;
+        z-index: 1000;
+    }
+
+    div {
+        width: 512px;
+        height: 512px;
+        background-color: #06398A;
+    }
+
+    div::before {
+        position: absolute;
+        content: "";
+        width: 242px;
+        height: 242px;
+        border-radius: 999px;
+
+        left: 85px;
+        top: 85px;
+        background-color: #E1E6EA;
+
+        box-shadow: inset -17px -17px 0 2px #C9CCD1;
+    }
+
+    p::before {
+        position: absolute;
+        content: "";
+
+        width: 10px;
+        height: 10px;
+        left: 191px;
+        top: 107px;
+        border-radius: 999px;
+        background-color: #FFFFFF;
+    }
+
+    div::after {
+        position: absolute;
+        content: "";
+
+        width: 51px;
+        height: 51px;
+        left: 215px;
+        top: 215px;
+        border-radius: 999px;
+        background-color: #AFB2B8;
+    }
+
+    p::after {
+        position: absolute;
+        content: "";
+
+        width: 29px;
+        height: 29px;
+        left: 207px;
+        top: 112px;
+        border-radius: 999px;
+
+        background-color: #FFFFFF;
+    }
+
+    /* Your CSS code here */
+</style>
+<html>
+<body>
+<div><p></p></div>
+<!--<img src="example.png">-->
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+    <style>
+        /*
+            Mockup in Figma: https://www.figma.com/file/mzgXwopZ4DDpCArtWNssvC/Lab-1?node-id=15%3A13
+
+            Try to reproduce checkbox component using pure CSS and HTML
+
+            HTML tags that can be useful: div, input, label
+            CSS properties that can be useful: margin, opacity, position, display, padding, content, height, width
+                background, border-radius, left, top, transition, background-image, background-repeat, box-shadow
+         */
+
+        body {
+            margin: 40px;
+        }
+
+        .checkbox input[type="checkbox"] {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .checkbox label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+        }
+
+        .checkbox label::before,
+        .checkbox label::after {
+
+        }
+
+        .checkbox label::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+
+            border: 1px solid #4E46B4;;
+            border-radius: 2px;
+            margin-right: 8px;
+        }
+
+
+        .checkbox input:checked + label::before {
+            background-color: #216FC8;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("assets/check_mark.svg");
+            background-size: 10px 10px;
+        }
+
+        .checkbox input:disabled + label::before{
+            background-color: #EEEFEF;
+            border-color: #999CA0;
+        }
+
+        .checkbox input:hover:disabled + label::before,
+        .checkbox input:focus:disabled + label::before{
+            box-shadow: 0 0 10px 1px #999CA0;
+        }
+
+
+        .checkbox label:hover::before {
+            box-shadow: 0 0 10px 1px #4E46B4;
+        }
+    </style>
+</head>
+<body>
+<div class="checkbox">
+    <input type="checkbox" id="checkbox_1">
+    <label for="checkbox_1">Some label</label>
+</div>
+</body>
+</html>

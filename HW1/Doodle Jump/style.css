@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-image: url("https://staticdelivery.nexusmods.com/images/1151/6050893-1472831060.gif");
+}
+
+#play{
+    position: absolute;
+    font-size: 40px;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    padding: 10%;
+
+    background-color: red;
+    border: solid 10px black;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#score{
+    position: relative;
+    color: wheat;
+    text-align: center;
+    font-size: 69px;
+
+    z-index: 10;
+}
+
+#play-space {
+    margin: 5px;
+    position: relative;
+    width: 400px;
+    height: 750px;
+
+
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: 25%;
+}
+
+#title{
+    width: 500px;
+    height: 50px;
+}
+
+#doodle {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+
+    left: 0;
+    bottom: 0;
+
+    background-size: cover;
+    background-image: url("doodler.png");
+
+    z-index: 1;
+}
+
+.platform{
+    position: absolute;
+    background-color: green;
+
+    border: solid 3px black;
+    border-radius: 1000px;
+    z-index: 0;
+}

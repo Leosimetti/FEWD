@@ -1,0 +1,119 @@
+<html>
+<head>
+    <style>
+        /*
+            Mockup in Figma: https://www.figma.com/file/mzgXwopZ4DDpCArtWNssvC/Lab-1?node-id=14%3A13
+
+            Try to reproduce example from mockup using HTML and CSS
+
+            HTML tags that can be useful: div, h1, img, span, p, button
+            CSS properties that can be useful: padding, background-color, border-radius, box-shadow, font-weight
+                font-size, line-height, color, height, width, margin
+         */
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+        body {
+            width: 400px;
+            padding: 40px;
+            background: #eee;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+
+        .card {
+            width: 300px;
+            background: #FFF;
+            border-radius: 40px;
+        }
+
+        .card .course-pic {
+            width: 300px;
+            height: 165px;
+            background-color: #C4C4C4;
+            border-radius: 40px 40px 0 0;
+        }
+
+        .card .start-button {
+            width: 100%;
+            height: 56px;
+            background-color: #216FC8;
+            border-color: transparent;
+            border-radius: 0 0 40px 40px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF;
+
+        }
+
+        .card .description {
+            padding: 16px;
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+        }
+
+        .card .rating {
+            margin-bottom: 8px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .card .rating span{
+            font-weight: 300;
+            line-height: 23px;
+            color: #999999;
+            margin-left: 10px;
+        }
+
+        .card .description p{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        .card .description p:last-of-type{
+            margin-bottom: 0;
+        }
+
+        /* Your CSS code here */
+    </style>
+</head>
+<body>
+<div class="card">
+    <img alt="cool pic" class="course-pic"/>
+    <div class="description">
+        <h2>
+            Big Data for managers of corporations
+        </h2>
+
+        <div class="rating">
+            <img src="assets/star.svg" alt="star">
+            <img src="assets/star.svg" alt="star">
+            <img src="assets/star.svg" alt="star">
+            <img src="assets/star_half.svg" alt="star">
+            <img src="assets/star_border.svg" alt="star">
+            <span> 3.5 (233)</span>
+        </div>
+
+        <p>Language: Albanian</p>
+        <p>Year: 2007</p>
+        <p>Price: 228</p>
+        <p>Provider: Amogus enterprise</p>
+    </div>
+    <button class="start-button">Start Learning</button>
+</div>
+<!-- Your HTML code here -->
+</body>
+</html>
