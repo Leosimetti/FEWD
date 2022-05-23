@@ -1,0 +1,135 @@
+body, html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--main-bg-color);
+
+    --main-bg-color: #343434;
+    --main-text-color: rgb(187 134 252);
+    --main-darkened-color: rgb(58 45 73);
+}
+
+.game-window {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-window__game-name {
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    height: 60px;
+
+    color: var(--main-text-color);
+    background: var(--main-bg-color);
+    border: var(--main-text-color) solid;
+    border-width: 0 0 5px 0;
+}
+
+.game-window__content {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 65px);
+}
+
+.game-window__game-content {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.game-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hole {
+    /*background: wheat;*/
+    height: 150px;
+    width: 120px;
+    background: transparent;
+    position: relative;
+}
+.hole:after{
+    display: block;
+    position: relative;
+    top: 100px;
+    content: "";
+    width: 130px;
+    transform: translateX(-15px);
+    height: 60px;
+
+    border: 10px var(--main-text-color) solid;
+    border-radius: 40px;
+    background: transparent;
+}
+
+.hole__content{
+    position: absolute;
+    bottom: 0;
+    max-height: 0;
+    background: transparent;
+    width: 100%;
+    cursor: pointer;
+
+    height: 100px;
+    transition: max-height 0.6s ease-out;
+
+    /*height: 120px;*/
+    z-index: 1;
+}
+.hole__content_active{
+    max-height: 100px;
+    height: 100px;
+    transition: max-height 0.6s ease-in;
+}
+
+.ricardo {
+    background: url("./static/ricardo.gif");
+}
+
+.imposter {
+    background: url("./static/imposter.png");
+}
+
+.menu__button {
+    font-size: 50px;
+    width: 100%;
+    height: 100px;
+    color: var(--main-text-color);
+
+    border: var(--main-text-color) solid;
+    border-width: 5px 0 0 0;
+    background: var(--main-bg-color) ;
+
+    cursor: pointer;
+}
+.menu__button:hover {
+    background: var(--main-text-color);
+    color: var(--main-bg-color);
+}
+.menu__button:active {
+    background: var(--main-darkened-color);
+    border-color: var(--main-darkened-color);
+    color: white;
+}
+
+.locked {
+    pointer-events: none;
+}
+.score {
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    width: 100%;
+    color: var(--main-text-color);
+    opacity: 40%;
+    font-size: 30px;
+}
